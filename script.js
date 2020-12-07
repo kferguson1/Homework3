@@ -5,6 +5,7 @@ var generateBtn = document.querySelector("#generate");
 var LetterCaseArray=[];
 var LowCase=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var UpperCase=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","X","Y","Z"]
+var Characters=["!","@","#","$","%","^","&","*","(",")","{","}","|","[","]",";","'",":","<",">","?","/"]
 
 // Write password to the #password input
 function writePassword() {
