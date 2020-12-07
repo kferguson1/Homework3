@@ -12,7 +12,11 @@ var Numbers=["1","2","3","4","5","6","7","8","9","0"]
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+    var passwordString="";
+    var LowerCase=confirm("Would you like to use a lowercase letter?");
+    var UpperCase=confirm("Would you like to use a lowercase letter?");
+    var SpecChar=confirm("Would you like to use a special character?");
+    var Number=confirm("Would you like to use a number?");
 
   passwordText.value = password;
 
