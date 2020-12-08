@@ -26,14 +26,15 @@ function writePassword() {
 var confirmlength = (prompt("How many characters would you like your password to be?"))
 
     // Outside of Paramaters - Loop
-    while(confirmlength <=7 ||confirmlength >=51) {
-        alert("Error: Password must be between 8 and 50 characters. Please try again!")
+    while(confirmlength <=7 ||confirmlength >=129) {
+        alert("Error: Password must be between 8 and 128 characters. Please try again!")
     }
     var passwordString="";
     var confirmLowCase=confirm("Would you like to use a lowercase letter?");
     var confirmUpperCase=confirm("Would you like to use a lowercase letter?");
     var confirmCharacters=confirm("Would you like to use a special character?");
     var confirmNumbers=confirm("Would you like to use a number?");
+
 
         // If "False" Chosen for all - Loop
         while(confirmLowCase===false && confirmUpperCase===false && confirmCharacters===false && confirmNumbers===false) {
@@ -45,36 +46,24 @@ var confirmlength = (prompt("How many characters would you like your password to
         }
 
     // If Statements for user input
-    if (LowerCase==true) {
-        LetterCaseArray.push(LowerCase);
-        }
-
-    if (UpperCase==true){
-        LetterCaseArray.random(UpperCase);
-    }
-    if (SpecChar==true){
-        LetterCaseArray.push(SpecChar);
-    }
-    if (Numbers==true){
-        LetterCaseArray.push(Numbers);
-    }
+              if (LowCase==true) {
+                Math.random(LowCase);
+                }
+              if (UpperCase==true){
+                Math.random(UpperCase);
+                }
+             if (Characters==true){
+                 Math.random(SpecChar);
+                }
+             if (Numbers==true){
+                 Math.random(Numbers)
+                }
 
 }
-    // passwordEntry.textContent=passwordString; 
-    
 
-//   passwordText.value = password;
 
 
 
+//   passwordText.value = password;
 // Add event listener to generate button
-
-// console.log("Your password is " + passwordString);
-    // alert("Your password is " + passwordString);
-    // passwordEntry.textContent=passwordString;
-
-// let generateButton=document.getElementById("generateButton");
-// let passwordEntry=document.getElementById("passwordEntry");
-// generateButton.onclick = generatePassword;
-
 // generateBtn.addEventListener("click", writePassword);
