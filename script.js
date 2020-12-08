@@ -10,14 +10,12 @@ var UpperCase=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","
 var Characters=["!","@","#","$","%","^","&","*","(",")","{","}","|","[","]",";","'",":","<",">","?","/"];
 var Numbers=["1","2","3","4","5","6","7","8","9","0"];
 
-function generatePassword(){
-    var confirmlength = (prompt("How many characters would you like your password to be?"))
-
-    // Outside of Paramaters - Loop
-    while(confirmlength <=7 ||confirmlength >=51) {
-        alert("Error: Password must be between 8 and 50 characters. Please try again!")
-    }
-}
+// Defining Variables
+var confirmlength = "";
+var confirmLowCase;
+var confirmUpperCase;
+var confirmCharacters;
+var confirmNumbers;
 
 // Write password to the #password input
 function writePassword() {
@@ -32,10 +30,19 @@ var confirmlength = (prompt("How many characters would you like your password to
         alert("Error: Password must be between 8 and 50 characters. Please try again!")
     }
     var passwordString="";
-    var LowerCase=confirm("Would you like to use a lowercase letter?");
-    var UpperCase=confirm("Would you like to use a lowercase letter?");
-    var SpecChar=confirm("Would you like to use a special character?");
-    var Number=confirm("Would you like to use a number?");
+    var confirmLowCase=confirm("Would you like to use a lowercase letter?");
+    var confirmUpperCase=confirm("Would you like to use a lowercase letter?");
+    var confirmCharacters=confirm("Would you like to use a special character?");
+    var confirmNumbers=confirm("Would you like to use a number?");
+
+        // If "False" Chosen for all - Loop
+        while(confirmLowCase===false && confirmUpperCase===false && confirmCharacters===false && confirmNumbers===false) {
+            alert("Error: You must pick at least one option. Please try again!");
+            var confirmLowCase=confirm("Would you like to use a lowercase letter?");
+            var confirmUpperCase=confirm("Would you like to use a lowercase letter?");
+            var confirmCharacters=confirm("Would you like to use a special character?");
+            var confirmNumbers=confirm("Would you like to use a number?");
+        }
 
     // If Statements for user input
     if (LowerCase==true) {
