@@ -31,6 +31,8 @@ Added password length prompt and error loop
 Added loop for “All False” answers
 Attempted to generate random elements from array and display password in Text Area (Unsuccessful)
 
+Technologies Used: HTML, CSS, JAVASCRIPT
+
 <!-- Screenshots -->
 ![HM3-1](https://user-images.githubusercontent.com/66282427/101432570-18cacc80-38d7-11eb-924a-04c5398baa58.png)
 
