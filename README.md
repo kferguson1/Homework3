@@ -1,4 +1,4 @@
-# Homework3
+# Homework3 - Password Generator
 
 The purpose of this exercise is to create an application so that an employee can generate a random password based on the critera they've selected. 
 
